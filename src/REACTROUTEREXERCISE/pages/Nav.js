@@ -1,13 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import './style.css';
+
 
 export default function Nav() {
   return (
 
     <ul>
-        <li><Link to="/home">Home</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <li><NavLink to="/home">Home</NavLink></li>
+        <li><NavLink to="/blog">Blog</NavLink></li>
+        <li><NavLink to="/about">About</NavLink></li>
 
 
 
@@ -15,3 +17,14 @@ export default function Nav() {
     
   )
 }
+
+
+// // Q) how to use NavLink and what is the impact of using NavLink
+// Q) what is the difference between Link and NavLink
+// Q) discuss navigate case study => expline by coding
+// Q) we have a single input field when user type something over hare and click Submit
+// he will redirect to route => how will u achive it =>42min
+// Q) how to use useLocation hook with useNavigate hook =>58 min
+// 1hour 35min
+
+
